@@ -1,0 +1,151 @@
+
+{
+    "Format": "2.9.0",
+
+/*--------------------------------------------------------------
+ _____  _____  _   __  _____  _____  _____ 
+/  __ \|  _  || \ |  ||  ___||_   _||  __ \
+| /  \/| | | ||  \|  || |_     | |  | |  \/
+| |    | | | ||   `  ||  _|    | |  | | __
+| \__/\\ \_/ /|  |\  || |     _| |_ | |_\ \
+ \____/ \___/ |__| \_/\_|     \___/ \_____/ 
+ ----------------------------------------------------------------------*/                                
+                                      
+
+
+"ConfigSchema": {
+    "Player Pronouns 1": {
+      "Default": "They",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Section": "Pronouns",
+      "Description": "Would typically be something similar to \"They\", \"He\", \"She\"."
+    },
+    "Player Pronouns 2": {
+      "Default": "Them",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Section": "Pronouns",
+      "Description": "Would typically be something similar to \"Them\", \"Her\", \"He\"."
+    },
+    "Player Pronouns 3": {
+      "Default": "They're",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Section": "Pronouns",
+      "Description": "Usually do be a thing like \"They're\", \"She's\", \"He's\"."
+    },
+    "Player Pronouns 4": {
+      "Default": "Their",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Section": "Pronouns",
+      "Description": "Usually do be a thing like \"Their\", \"His\", \"Hers\"."
+    },
+    "Descriptive Word": {
+      "Default": "Cute",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Section": "NickName",
+      "Description": "Compliment descriptor - sumth'n like  \"Pretty\", \"Cute\", \"Handsome\", etc."
+    },
+    "Player Nickname": {
+      "Default": "Softness",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Section": "NickName",
+      "Description": "Sets the player's desired nickname."
+    
+    },
+    "Explicit Content": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Disabled",
+      "Section": "Events",
+      "Description": "Do you want the NSFW stuff? TW/CW Aphrodesiacs, Dubcon, etc"
+    },
+   
+    
+
+  },
+    "DynamicTokens": [
+  
+     {
+        "Name": "NickName",
+        "Value": "{{Player NickName}}"
+      },
+      {
+        "Name": "LNickName",
+        "Value": "{{Lowercase: {{Player NickName}}}}"
+      },
+      {
+        "Name": "Descript",
+        "Value": "{{Descriptive Word}}"
+      },
+      {
+        "Name": "LDescript",
+        "Value": "{{Lowercase: {{Descriptive Word}}}}"
+      },
+      {
+        "Name": "Unders",
+        "Value": "{{Player Unders}}"
+      },
+      {
+        "Name": "LUnders",
+        "Value": "{{Lowercase: {{Player Unders}}}}"
+      },    
+      {
+        "Name": "PFFlower",
+        "Value": "{{Player Favorite Flower}}"
+      },
+      {
+        "Name": "LPPFlower",
+        "Value": "{{Lowercase: {{Player Favorite Flower}}}}"
+      },
+      {
+         "Name": "PSNN",
+         "Value": "{{Player Southern Nickname}}"
+      },
+      {
+        "Name": "LPSNN",
+        "Value": "{{Lowercase: {{Player Southern NickName}}}}"
+      },
+
+  {
+      "Name": "WeekDayList",
+      "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+  }, 
+  {
+      "Name": "WeekDay",
+      "Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+    },
+
+
+   
+  ],
+
+
+    "Changes": 
+
+    [
+         
+
+ 
+              
+  //Schedules
+    
+
+       {
+    "LogName": "Includes",
+      "Action": "Include",
+      "FromFile": "Data/Dialogue/Dialogue.json"
+    },
+        {
+      "Action": "Load",
+      "Target": "Data/Events/KentsBedroom",
+      "FromFile": "data/Events/blank.json"
+          
+        }
+        
+   
+    ]
+}

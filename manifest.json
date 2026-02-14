@@ -1,0 +1,42 @@
+{
+    "Name": "Weaponized Golden Retriever",
+    "Author": "CacklingCaracal",
+    "Version": "1.0.0",
+    "Description": "All he can think about is you",
+    "UniqueID": "CC.WGR",
+    "UpdateKeys": [],
+        "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+     },
+    "Dependencies": [
+         {
+			"UniqueID": "Spiderbuttons.BETAS",
+			"IsRequired": true
+		},
+         {
+      "UniqueID": "ichortower.SecretNoteFramework",
+      "IsRequired": true
+    },
+      {
+      "UniqueID": "Spiderbuttons.FEM",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "IsRequired": true
+    },
+ 
+    	{
+			"UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
+			"IsRequired": true,
+			"MinimumVersion": "2.5.1"
+		}
+  ],
+    	"DH.MEEP": "2.0.0",
+	"DH.MEEP.CloseupInteractions": "",
+	"DH.MEEP.VanillaLetters": "",
+	"DH.MEEP.SetMailFlag": "",
+  "DH.MEEP.AddConversationTopic": ""
+    
+}
+

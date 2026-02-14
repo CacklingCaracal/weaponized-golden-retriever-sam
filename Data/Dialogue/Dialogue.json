@@ -1,0 +1,13 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sam's Random Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                "Introduction": "Hey hey, you must be @! I'm Sam. I make loud music, bad decisions and *great* first impressions.$h",
+                "Mon": "Personalized agent of chaos, at your service.$h"
+            }
+        }
+    ]
+}
