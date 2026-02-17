@@ -50,20 +50,13 @@
       "Description": "Compliment descriptor - sumth'n like  \"Pretty\", \"Cute\", \"Handsome\", etc."
     },
     "Player Nickname": {
-      "Default": "Softness",
+      "Default": "Muse",
       "AllowBlank": false,
       "AllowMultiple": true,
       "Section": "NickName",
       "Description": "Sets the player's desired nickname."
     
-    },
-    "Explicit Content": {
-      "AllowValues": "Enabled, Disabled",
-      "Default": "Disabled",
-      "Section": "Events",
-      "Description": "Do you want the NSFW stuff? TW/CW Aphrodesiacs, Dubcon, etc"
-    },
-   
+    }
     
 
   },
@@ -85,31 +78,7 @@
         "Name": "LDescript",
         "Value": "{{Lowercase: {{Descriptive Word}}}}"
       },
-      {
-        "Name": "Unders",
-        "Value": "{{Player Unders}}"
-      },
-      {
-        "Name": "LUnders",
-        "Value": "{{Lowercase: {{Player Unders}}}}"
-      },    
-      {
-        "Name": "PFFlower",
-        "Value": "{{Player Favorite Flower}}"
-      },
-      {
-        "Name": "LPPFlower",
-        "Value": "{{Lowercase: {{Player Favorite Flower}}}}"
-      },
-      {
-         "Name": "PSNN",
-         "Value": "{{Player Southern Nickname}}"
-      },
-      {
-        "Name": "LPSNN",
-        "Value": "{{Lowercase: {{Player Southern NickName}}}}"
-      },
-
+     
   {
       "Name": "WeekDayList",
       "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
@@ -127,24 +96,13 @@
     "Changes": 
 
     [
-         
-
- 
-              
-  //Schedules
-    
 
        {
     "LogName": "Includes",
       "Action": "Include",
       "FromFile": "Data/Dialogue/Dialogue.json"
     },
-        {
-      "Action": "Load",
-      "Target": "Data/Events/KentsBedroom",
-      "FromFile": "data/Events/blank.json"
-          
-        }
+       
         
    
     ]
